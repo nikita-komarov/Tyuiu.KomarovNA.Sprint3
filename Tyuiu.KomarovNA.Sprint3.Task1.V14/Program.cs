@@ -75,21 +75,36 @@ namespace Tyuiu.KomarovNA.Sprint3.Task1.V14
             //}
             //Console.WriteLine(sp);
 
-            double s0 = 0;
-            double s1 = 0;
-            int x = 2;
-            for (int j = 1; j<= 3; j++)
-            {
-                for (int k = 1; k<= 3; k++)
-                {
-                    s0 = 2 * k - x;
-                    s1 += s0;
-                }
-            }
-            Console.WriteLine(Math.Round(s1, 3));
+            //double s0 = 0;
+            //double s1 = 0;
+            //int x = 2;
+            //for (int j = 1; j<= 3; j++)
+            //{
+            //    for (int k = 1; k<= 3; k++)
+            //    {
+            //        s0 = 2 * k - x;
+            //        s1 += s0;
+            //    }
+            //}
+            //Console.WriteLine(Math.Round(s1, 3));
             //Console.WriteLine(s1);
 
+            int x;
+            int sumd = 0;
+            for (x=2; x<=5; x++)
+            {
+                for (int d=1; d<=x; d++)
+                {
+                    if (x%d==0)
+                    {
 
+                            sumd = sumd + d;
+
+                    }
+                }
+            }
+
+            Console.WriteLine(sumd);
 
             var result = ds.GetSumSeries(0.7, 1, 14);
             //Console.WriteLine(result);
