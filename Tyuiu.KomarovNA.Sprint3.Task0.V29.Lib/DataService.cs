@@ -13,7 +13,7 @@ namespace Tyuiu.KomarovNA.Sprint3.Task0.V29.Lib
             {
                 sum += (Math.Pow(t, 2 * k) + (1.0 / (k+1))) * Math.Cos(t);
             }
-            return sum;
+            return Math.Round(sum, 3);
         }
     }
 }
