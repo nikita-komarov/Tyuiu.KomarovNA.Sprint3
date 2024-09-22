@@ -9,9 +9,9 @@ namespace Tyuiu.KomarovNA.Sprint3.Task0.V29.Lib
         {
             double sum = 0;
             double t = value;
-            for (int i = startValue; i<=stopValue; i++)
+            for (int k = startValue; k<=stopValue; k++)
             {
-                sum += (Math.Pow(t, 2 * i) + 1 / (i+1)) * Math.Cos(t);
+                sum += (Math.Pow(t, 2 * k) + (1.0 / (k+1))) * Math.Cos(t);
             }
             return sum;
         }
