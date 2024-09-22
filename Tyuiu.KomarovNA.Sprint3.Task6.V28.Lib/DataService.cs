@@ -9,9 +9,9 @@ namespace Tyuiu.KomarovNA.Sprint3.Task6.V28.Lib
             int count = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                for (int j = 1; j<=i; j++)
+                for (int j = 1; j<7; j++)
                 {
-                    if (j%i == 0)
+                    if (i%j == 0)
                     {
                         count++;
                     }
