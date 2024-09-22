@@ -6,19 +6,19 @@ namespace Tyuiu.KomarovNA.Sprint3.Task7.V17.Lib
     {
         public double[] GetMassFunction(int startValue, int stopValue)
         {
-            double[] result = new double[15];
+            double[] result = new double[11];
             int index = 0;
             for (int i = startValue; i<=stopValue; i++)
             {
 
                 int x = i;
                 double y;
-                if (x+1.7==0)
+                if (x+1.7==0.0)
                 {
                     y = 0;
                 } else
                 {
-                    y = (Math.Sin(x)) / (x+1.7) - Math.Cos(x) * 4*x - 6;
+                    y = ((Math.Sin(x)) / (x+1.7)) - Math.Cos(x) * 4*x - 6;
                 }
                 result[index] = (Math.Round(y, 2));
                 index++;

@@ -36,9 +36,9 @@ namespace Tyuiu.KomarovNA.Sprint3.Task7.V17
 
             var result = ds.GetMassFunction(-5, 5);
             Console.WriteLine(result);
-            foreach (double el in result)
+            foreach (var el in result)
             {
-                Console.WriteLine($"\tf(x) = {result}");
+                Console.WriteLine($"\tf(x) = {el}");
             }
             Console.ReadKey();
         }
