@@ -12,9 +12,9 @@ namespace Tyuiu.KomarovNA.Sprint3.Task2.V3.Lib
 
             do
             {
-                sum = (Math.Pow(x, 2) * i) + 1;
+                sum += (Math.Pow(x, 2) * i) + 1;
                 i++;
-            } while (i < stopValue);
+            } while (i <= stopValue);
 
             return Math.Round(sum, 3);
         }
