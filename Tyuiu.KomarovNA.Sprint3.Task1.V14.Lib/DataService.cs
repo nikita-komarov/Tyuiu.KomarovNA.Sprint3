@@ -11,7 +11,7 @@ namespace Tyuiu.KomarovNA.Sprint3.Task1.V14.Lib
             int k = 1;
             while (k <= 14)
             {
-                sum += (Math.Pow(t, k) + (1 / (k + 1))) * Math.Cos(t);
+                sum += (Math.Pow(t, k) + (1.0 / (k + 1))) * Math.Cos(t);
                 k++;
             }
             return Math.Round(sum, 3);

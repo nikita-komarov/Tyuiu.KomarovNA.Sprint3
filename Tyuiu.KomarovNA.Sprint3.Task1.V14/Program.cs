@@ -35,7 +35,7 @@ namespace Tyuiu.KomarovNA.Sprint3.Task1.V14
 
             DataService ds = new DataService();
 
-            var result = ds.GetSumSeries(0.4, 1, 14);
+            var result = ds.GetSumSeries(0.7, 1, 14);
             Console.WriteLine(result);
             Console.ReadKey();
         }
