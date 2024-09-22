@@ -1,5 +1,5 @@
-﻿using Tyuiu.KomarovNA.Sprint3.Task1.V14.Lib;
-namespace Tyuiu.KomarovNA.Sprint3.Task1.V14
+﻿using Tyuiu.KomarovNA.Sprint3.Task2.V3.Lib;
+namespace Tyuiu.KomarovNA.Sprint3.Task2.V3
 {
     class Program
     {
@@ -10,12 +10,12 @@ namespace Tyuiu.KomarovNA.Sprint3.Task1.V14
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #3                                                               *");
             Console.WriteLine("* Оператор if - полная и короткая форма записи                            *");
-            Console.WriteLine("* Задание #0                                                              *");
-            Console.WriteLine("* Вариант #29                                                             *");
+            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Вариант #3                                                            *");
             Console.WriteLine("* Выполнил: Комаров Никита Алексеевич | ИИПБ-24-1                         *");
             Console.WriteLine("***************************************************************************");
-            Console.WriteLine("* УСЛОВИЕ:                                                                *");
-
+            Console.WriteLine("* УСЛОВИЕ:                                                                *"); 
+            
             Console.WriteLine("*Написать программу на, которая запрашивает целые значения с клавиатуры и *");
             Console.WriteLine("* вычисляет находится ли точка с координатами X,Y в заштрихованной области*");
             Console.WriteLine("*и.                                                                       *");
@@ -35,23 +35,7 @@ namespace Tyuiu.KomarovNA.Sprint3.Task1.V14
 
             DataService ds = new DataService();
 
-
-            //int a = 6;
-            //int b = 4;
-            //int c = 8;
-            //int d = 7;
-            //int i = 1;
-            //do
-            //{
-            //    b++;
-            //    b = a+c;
-            //    c = b-a;
-            //    d = (a-c) - i;
-            //    i++;
-            //} while (i < 4);
-            //Console.WriteLine(d);
-
-            var result = ds.GetSumSeries(0.7, 1, 14);
+            var result = ds.GetSumSeries(4, 1, 15);
             Console.WriteLine(result);
             Console.ReadKey();
         }
